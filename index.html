@@ -10,6 +10,7 @@
       font-family: 'Poppins', sans-serif;
       background-color: #f9f9f9;
       padding: 20px;
+      margin: 0;
     }
     h1 {
       color: #333;
@@ -24,17 +25,83 @@
     a:hover {
       text-decoration: underline;
     }
+    
+    /* New styles for MERN box */
+    .mern-box {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin: 30px 0;
+      max-width: 800px;
+    }
+    
+    .mern-title {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    
+    .mern-description {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .projects-btn {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    
+    .projects-btn:hover {
+      background-color: #2980b9;
+      text-decoration: none;
+    }
+    
+    .nav {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .nav a {
+      padding: 8px 15px;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+    
+    .nav a:hover {
+      background-color: #e0e0e0;
+    }
   </style>
 </head>
 <body>
 
   <h1>Harsh Kumar</h1>
-
-  <div class="section">
+  
+  <div class="nav">
     <a href="portfolio/index.html">My Portfolio</a>
+    <a href="#assignments">Assignments</a>
+    <a href="#projects">Projects</a>
   </div>
 
-  <div class="section">
+  <div class="mern-box">
+    <h2 class="mern-title">MERN Stack Developer</h2>
+    <p class="mern-description">
+      I'm a passionate MERN stack developer with expertise in building modern web applications. 
+      My skills include MongoDB for database management, Express.js for server-side logic, 
+      React for building interactive user interfaces, and Node.js for backend development. 
+      I specialize in creating full-stack JavaScript solutions with clean code and responsive designs.
+    </p>
+    <a href="#projects" class="projects-btn">See My Projects</a>
+  </div>
+
+  <div class="section" id="assignments">
     <h2>Assignments</h2>
     <ul>
       <li><a href="a1/index.html">Assignment 1</a></li>
@@ -42,7 +109,7 @@
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section" id="projects">
     <h2>Projects</h2>
     <ul>
       <li><a href="p1/index.html">Project 1</a></li>
