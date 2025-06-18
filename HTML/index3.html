@@ -7,5 +7,89 @@
 </head>
 <body>
     <h1>Form Tags</h1>
+    <form>
+    <!-- <form action="server.jsp" method="POST"> -->
+    <!-- <p>
+        <input type="text" autofocus required placeholder="Enter name"/>
+    </p> -->
+    <!-- <p>
+        <input type="text" value="Harsh" readonly/>
+    </p> -->
+     <p>
+        <input type="text" size="50px" required maxlength="5"/>
+    </p>
+    <button type="submit">Submit</button>
+    <input type="image" src="button.png">
+    <input type="button" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+
+    <br>
+    <fieldset>
+        <legend>Login Form</legend>
+    <form>
+        
+        <p><input type="text" placeholder="Enter mail"></p>
+        <p><input type="password" placeholder="Enter password"></p>
+        <button>Login</button>
+    </form>
+    </fieldset>
+<br>
+
+     <fieldset>
+        <legend>Registration Form</legend>
+    <form>
+        <p><input type="text" placeholder="Enter name"></p>
+        <p><input type="text" placeholder="Enter mail"></p>
+        <p><input type="password" placeholder="Enter password"></p>
+        <p><input type="date"></p>
+        
+           <p> <input type="checkbox">Python
+            <input type="checkbox">Java
+            <input type="checkbox">JavaScript </p>
+
+            <p><input type="radio">
+            <label>Male</label>
+            <input type="radio">
+            <label>Female</label>
+            </p>
+            <p>
+                <select>
+                    <optgroup label="India"></optgroup>
+                    <option value="1">Delhi</option>
+                    <option value="1">Chennai</option>
+                    <option value="1">Banglore</option>
+                    <optgroup label="USA"></optgroup>
+                    <option value="1">Miami</option>
+                    <option value="1">New York</option>
+                    <option value="1">Columbus</option>
+                </select>
+            </p>
+            <p>
+                <input type="number">
+            </p>
+            <p>
+                <input type="file" accept=".jpg, .png, .jpeg">
+            </p>
+
+            <p>
+                <input type="color">
+            </p>
+            <p><label for="remember">Remember me</label><input type="checkbox" id="remember"></p>
+            <p><textarea rows="4" cols="50"  placeholder="About me"></textarea></p>
+            <p>
+                <input list="country">
+                <datalist id="country">
+                    <option value="India">
+                    <option value="USA">
+                    <option value="Canada">
+                    <option value="Australia">
+            </p>
+           
+
+        
+        <button>Register</button>
+    </form>
+    </fieldset>
 </body>
 </html>
